@@ -2,7 +2,6 @@ import os
 import time
 import string
 import random
-import urllib3
 import pyfiglet
 from rich import print
 from bs4 import BeautifulSoup
@@ -61,6 +60,7 @@ def generateCodes():
     # print('[white]{} | [/white][cyan][>][/cyan] https://discord.gift/{}'.format(len(allCodesArray), generated))
 
 def checkCodes():
+    print('[cyan][!][/cyan] Starting web-automation...')
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
     for i in range(len(allCodesArray)):
         driver.get("https://www.discord.com/gifts/{}".format(allCodesArray[i]))
