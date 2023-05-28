@@ -18,7 +18,7 @@ def mainMenu():
         os.system('cls')
     else:
         os.system('clear')
-    title = pyfiglet.figlet_format("LAWNS NITROGEN V1", font='slant')
+    title = pyfiglet.figlet_format("SIMPLE NITROGEN", font='slant')
     print(f'[cyan]{title}[/cyan]')
     print(' ')
     codeCount = Prompt.ask('[cyan][?][/cyan] How many codes you want to generate?\n[cyan][>][/cyan]', show_choices=False, show_default=False)
